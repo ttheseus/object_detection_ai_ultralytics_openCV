@@ -3,9 +3,7 @@ import os
 from ultralytics import YOLO
 import cv2
 
-# VIDEOS_DIR = os.path.join('home', 'user', 'Documents', 'ai', 'yolo_testai2-main', 'video')
-
-video_path = os.path.join('/', 'home', 'user', 'Documents', 'ai', 'yolo_testai2-main', 'video', 'VIDEO.mp4') #/home/user/Documents/ai/yolo_testai2-main/VIDEO_out.avi'
+video_path = os.path.join([path to video]) # eg: '/', 'home', 'user', 'Documents', 'ai', 'yolo_testai2-main', 'video', 'VIDEO.mp4'
 if not os.path.exists(video_path):
     print(f"Error: Video file does not exist at {video_path}")
 else:
@@ -27,7 +25,7 @@ if not ret or frame is None:
 H, W, _ = frame.shape
 out = cv2.VideoWriter(video_path_out, cv2.VideoWriter_fourcc(*'MJPG'), int(cap.get(cv2.CAP_PROP_FPS)), (W, H))
 
-model_path = os.path.join('/', 'home', 'user', 'runs', 'detect', 'train19', 'weights', 'last.pt')
+model_path = os.path.join([path to weights]) # eg. '/', 'home', 'user', 'runs', 'detect', 'train19', 'weights', 'last.pt'
 
 model = YOLO(model_path)
 
