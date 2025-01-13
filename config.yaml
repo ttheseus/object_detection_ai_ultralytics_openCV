@@ -1,0 +1,16 @@
+# | ->> [ absolute path ] : path to the data
+path: C:/Users/dorothy.fanzhu/Documents/cvat/minecraft_mob_detector/minecraft_mob_detector_AI/data
+
+# | ->> [ relative path ] : path from absolute path to images/training
+train: images/train # | > training images
+val: images/train   # | > validation images
+
+# | ->> [ classes ] : input all object classifications here 
+names:
+  0: chimken
+  1: cow
+  2: creepet
+  3: iron gokem
+  4: pig
+  5: shep
+  6: wolf
