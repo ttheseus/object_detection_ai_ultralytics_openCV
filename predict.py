@@ -9,6 +9,11 @@ video_path = os.path.join(VIDEOS_DIR, '[video name]')
 video_path_out = '{}_out.mp4'.format(video_path)
 
 cap = cv2.VideoCapture(video_path)
+while(cap.isOpened()):
+    ret, frame = cap.read()
+    if ret:
+            assert not isinstance(frame,type(None)), 'frame not found'
+
 ret, frame = cap.read()
 H, W, _ = frame.shape
 out = cv2.VideoWriter(video_path_out, cv2.VideoWriter_fourcc(*'MP4V'), int(cap.get(cv2.CAP_PROP_FPS)), (W, H))
