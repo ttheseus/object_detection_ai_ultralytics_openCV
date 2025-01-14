@@ -5,6 +5,10 @@ path: [path]
 train: images/train # | > training images
 val: images/train   # | > validation images
 
+# | ->> [ relative path ] : path from absolute path to labels/training
+train_label_dir: labels/train
+val_label_dir: labels/val
+
 # | ->> [ classes ] : input all object classifications here 
 names:
   0: [name]
