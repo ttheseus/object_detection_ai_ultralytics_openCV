@@ -1,15 +1,12 @@
 #-------------------------------------------------------------# 
 
- #### ####  :*-_-*-_-*-_-*- -  
-########### | [ minecraft mob detection AI - training code]  
- #########  |    -> dorothy
-   #####    |                                                      
-     #      :*-_-*-_-*-_-*- -
-   
-    #| useful video follow along for the code that i used: 
-    #| https://www.youtube.com/watch?v=Z-65nqxUdl4&t=1979s
-    #|
-    #| go into terminal and enter 'pip install ultralytics'
+# | [ minecraft mob detection AI - training code]  
+# |    -> dorothy
+
+# | useful video follow along for the code that i used: 
+# | https://www.youtube.com/watch?v=Z-65nqxUdl4&t=1979s
+# |
+# | go into terminal and enter 'pip install ultralytics'
 
 #-------------------------------------------------------------#
 from ultralytics import YOLO 
